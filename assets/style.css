@@ -1,0 +1,324 @@
+:root{
+  font-size: 16px;
+}
+
+
+body {
+  font-family: "Roboto", sans-serif; 
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Start global Style */
+.content-width{
+  width: 75%;
+  @media (max-width: 750px){
+    width: 100%;
+  }
+
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  border: "2px solid red";
+  flex-wrap: wrap;
+}
+
+.reverce-flex{
+  justify-content: space-between;
+  @media (max-width: 750px){
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  }
+
+.Imagescale {
+  width: 450px;
+}
+
+.ContentScale {
+  width: 420px;
+  text-align: center;
+  margin: 10px;
+}
+
+
+.title{
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+/* end global Style */
+
+/* _________________________________________________________________ */
+
+/* Start Navbar Style */
+
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  background-color: #FFF;
+  padding: 20px 0;
+
+  @media (max-width: 750px){
+    justify-content: center;
+
+  }
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.logo h3{
+  font-size: 1.5rem;
+}
+
+.Logo-circle {
+  background-color: #458FF6;
+  border-radius: 50%;
+  width: 41px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.Logo-circle span {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.NavBar-links {
+  display: flex;
+
+  @media (max-width: 750px){
+    margin: 10px 0;
+
+  }
+
+}
+
+.NavBar li {
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+.NavBar-links li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+/* end Navbar Style */
+/* _________________________________________________________________ */
+
+/* Start Hero Section Style */
+
+.header {
+margin: 20px 0;
+}
+
+.header div{
+  width: 50%;
+
+  @media (max-width: 750px){
+    
+    width: 90%;
+  }
+}
+
+.header .header-content{
+  margin-top: 30px;
+  padding-top: 20px;
+}
+.header-content h1{
+  font-size: 3rem;
+
+}
+
+.header-content .header-paragraph{
+  color: #7D7987 ;
+  font-size: 1.4rem;
+  margin: 25px 0;
+}
+
+.img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.img-wrapper img {
+  width: 100%;
+}
+/* 
+.btn{
+
+
+} */
+
+.btn-primary{
+  background-color: #458FF6;
+  color: #FFFF;
+  border-radius: 15px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover{
+  transform: scale(1.1);
+  background-color: darkblue ;
+  transition: 2s;
+}
+
+/* end Hero Section Style */
+
+/* _________________________________________________________________ */
+
+/* start Ourservices Section Style */
+
+.Ourservices-section {
+  margin: 20px;
+}
+
+.Ourservices-decription{
+  font-size: 1rem;
+  color: #7D7987;
+  padding: 10px 20px;
+}
+
+.cards{
+  margin: 20px 0;
+}
+.cards h3{
+  margin: 10px 0;
+
+}
+.Ourservices-section .cards .card{
+  width : 300px ;
+  height: 304px;
+  margin: 10px;
+  padding: 22px;
+  box-shadow: 5px 5px 10px 0px rgba(10, 40, 50, 0.2);
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.Ourservices-section .cards .card:hover{
+  border: 2px solid #458FF6;
+  transition: 2s;
+}
+
+
+.card div{
+  min-height: 110px;
+  
+}
+
+.card p{
+  font-size: 1rem;
+  color: #7D7987;
+  min-height: 70px;
+}
+
+
+.Ourservices-Section-content {
+  text-align:center ;
+
+} 
+
+.Ourservices-Section-content h2 {
+  margin: 20px 0;
+}
+
+/* end Ourservices Section Style */
+/* _________________________________________________________________ */
+
+/* start OunMenu Section Style */
+
+.OurMenu-section-Image img {
+  width: 100%;
+  height: 100%;
+}
+
+.ContentScale div {
+  text-align: start;
+  margin: 25px 0;
+}
+
+.OurMenu-section {
+  text-align: center;
+  margin: 20px;
+  padding: 20px 0;
+}
+
+/* end OunMenu Section Style */
+
+/* _________________________________________________________________ */
+
+/* start Contact Section Style */
+
+.Contact-section {
+  margin: 20px;
+}
+
+.Contact-section div {
+  max-width: 870px;
+}
+
+.Contact-section div h2,
+h3 {
+  margin: 30px 0;
+}
+
+.Contact-section div form input {
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+  padding: 0 5px;
+}
+
+.Contact-section div form button {
+  width: fit-content;
+  height: 50px;
+  padding: 0 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.Contact-section div form button :hover {
+  background-color: rgba(241, 241, 241, 0);
+}
+/* end Contact Section Style */
+
+/* _________________________________________________________________ */
+
+/* start footer  */
+
+.Footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+/* end Contact footer */
