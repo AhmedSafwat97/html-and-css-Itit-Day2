@@ -316,7 +316,7 @@ body {
 .review-section .review-card {
   width: 90%;
   height: 400px;
-  background-color: #66c0f3;
+  background: linear-gradient(to bottom, #67C3F3, #5A98F2);
   border-radius: 20px;
   margin: 20px 0;
   align-items: center;
@@ -335,6 +335,10 @@ body {
   font-size: 2rem;
   color: #ffff;
   margin-top: 20px;
+  @media (max-width: 750px) {
+    font-size: 1rem;
+
+  }
 }
 
 .person-image {
@@ -455,7 +459,7 @@ body {
 
 .Footer {
   width: 100%;
-  background-color: #64b9f3;
+  background: linear-gradient(to bottom, #67C3F3, #5A98F2);
   text-align: center;
   border: 1px solid transparent;
   text-align: start;
