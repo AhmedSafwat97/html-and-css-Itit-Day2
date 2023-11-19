@@ -62,13 +62,6 @@ body {
 }
 
 
-.title{
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-
-
 .btn-primary{
   background-color: #458FF6;
   color: #FFFF;
@@ -157,6 +150,12 @@ body {
 .NavBar li {
   list-style-type: none;
   margin: 0 10px;
+
+  @media (max-width: 750px){
+    margin: 0 5px;
+
+
+  }
 }
 
 .NavBar-links li a {
@@ -346,25 +345,22 @@ margin: 20px 0;
   border-radius: 20px;
   margin: 20px 0;
   align-items: center;
-  flex-direction: column;
   text-align: center;
 
   @media (max-width: 750px){
     height: fit-content;
   }
-
 }
 
+.head {
+  width: 100%;
+}
 
 .review-card h2{
   font-size: 2rem;
   color: #FFFF;
   margin-top: 20px;
 }
-
-
-
-
 
 .person-image{
   width: 140px;
@@ -377,6 +373,7 @@ margin: 20px 0;
   width: 100%;
   height: 100%;
 }
+
 .review-content{
   align-items: center;
   justify-content: space-around;
@@ -387,12 +384,11 @@ margin: 20px 0;
   text-align: center;
 
   @media (max-width: 750px){
-    justify-content: center;
+    flex-direction: column;
 
   }
 
 }
-
 .review-content p{
   width: 200px;
 
@@ -403,15 +399,165 @@ margin: 20px 0;
 }
 
 /* end review Section Style */
+/* _________________________________________________________________ */
+
+
+/* start articles Section Style */
+
+.articles-section{
+  font-size: 2rem;
+  margin-top: 30px;
+  background-image: url(./images/Vector.png);
+  background-position: right 0px top 20%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.head {
+ text-align: center;
+ 
+}
+
+.articles-section .head h2{
+  font-size: 2rem;
+  color: black;
+}
+
+.articles-card{
+  width: 300px;
+  height: 500px;
+ border-radius: 20px;
+ justify-content: left;
+ align-items: start;
+ padding: 0;
+ overflow: hidden;
+margin: 10px;
+box-shadow: 5px 5px 10px 0px rgba(10, 40, 50, 0.2);
+
+
+}
+
+.artice-img img{
+  width: 100%;
+  height: 100%;
+
+}
+
+.artice-img{
+  width: 100%;
+  height: 240px;
+}
+
+.article-content{
+  flex-direction: column;
+  align-items: center;
+}
+
+.articles-card h3{
+  font-size: 1.2rem;
+  width: 75%;
+
+}
+
+.articles-card p{
+  font-size: 1rem;
+  width: 75%;
+  margin: 15px 0;
+}
+
+.articles-card a{
+  font-size: 1rem;
+  text-decoration: none;
+  color: #4089ED;
+}
+
+
+.articles-card a:hover{
+  text-decoration: underline;
+}
+
+.btn-a{
+  width: 75%;
+  display: flex;
+  justify-content: baseline;
+}
+
+/* end articles Section Style */
+
 
 /* _________________________________________________________________ */
 
 /* start footer  */
 
 .Footer {
-  background-color: #f1f1f1;
+  width: 100%;
+  background-color: #64B9F3;
   text-align: center;
   border: 1px solid transparent;
+  text-align: start;
+  padding: 5% 12.5%;
+  margin-top: 40px;
+
 }
 
+.footer-list1{
+  width: 25%;
+  @media (max-width: 750px){
+    width: 90%;
+
+  }
+
+}
+
+.footer-lists{
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+  @media (max-width: 750px){
+    width: 30%;
+    margin: 10px 20px;
+  }
+}
+
+.Footer .logo .Logo-circle{
+  background-color: #FFFF;
+}
+
+.Footer .logo .Logo-circle span {
+  color: #64B9F3;
+}
+
+.Footer .logo h3 {
+  color: #FFF;
+  font-size: 1.2rem;
+}
+
+.Footer p{
+  font-size: 1rem;
+  color: #FFFF;
+  margin: 20px;
+}
+
+.footer-lists h4{
+  color: #FFFF;
+}
+
+.footer-lists li {
+  list-style-type: none;
+  margin: 20px 0;
+
+}
+
+.footer-lists li a{
+text-decoration: none; 
+ color: #FFF;
+ font-size: 1rem;
+}
+
+
 /* end Contact footer */
+
+
+
+
+
