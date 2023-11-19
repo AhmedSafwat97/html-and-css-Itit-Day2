@@ -294,7 +294,7 @@ margin: 20px 0;
 /* end Ourservices Section Style */
 /* _________________________________________________________________ */
 
-/* start Section2 Style */
+/* start Section2 & 3  Style */
 
 
 .sec{
@@ -332,56 +332,77 @@ margin: 20px 0;
 }
 
 
-
-.ContentScale div {
-  text-align: start;
-  margin: 25px 0;
-}
-
-.OurMenu-section {
-  text-align: center;
-  margin: 20px;
-  padding: 20px 0;
-}
-
-/* end OunMenu Section Style */
+/* end  Section 2 & 3 Style */
 
 /* _________________________________________________________________ */
 
-/* start Contact Section Style */
+/* start review Section Style */
 
-.Contact-section {
-  margin: 20px;
-}
 
-.Contact-section div {
-  max-width: 870px;
-}
-
-.Contact-section div h2,
-h3 {
-  margin: 30px 0;
-}
-
-.Contact-section div form input {
-  width: 100%;
-  height: 50px;
+.review-section .review-card{
+  width: 90%;
+  height: 400px;
+  background-color: #66c0f3;
+  border-radius: 20px;
   margin: 20px 0;
-  padding: 0 5px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  @media (max-width: 750px){
+    height: fit-content;
+  }
+
 }
 
-.Contact-section div form button {
-  width: fit-content;
-  height: 50px;
-  padding: 0 5px;
-  cursor: pointer;
-  margin-bottom: 20px;
+
+.review-card h2{
+  font-size: 2rem;
+  color: #FFFF;
+  margin-top: 20px;
 }
 
-.Contact-section div form button :hover {
-  background-color: rgba(241, 241, 241, 0);
+
+
+
+
+.person-image{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
 }
-/* end Contact Section Style */
+
+.person-image img{
+  width: 100%;
+  height: 100%;
+}
+.review-content{
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin: 30px 0;
+  padding: 20px 0;
+  color: #FFFFFF;
+  text-align: center;
+
+  @media (max-width: 750px){
+    justify-content: center;
+
+  }
+
+}
+
+.review-content p{
+  width: 200px;
+
+  @media (max-width: 750px){
+    margin: 10px 0;
+  }
+
+}
+
+/* end review Section Style */
 
 /* _________________________________________________________________ */
 
