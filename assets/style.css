@@ -457,7 +457,7 @@ body {
 
 /* start footer  */
 
-.Footer {
+.footer {
   width: 100%;
   background: linear-gradient(to bottom, #67C3F3, #5A98F2);
   text-align: center;
@@ -484,27 +484,27 @@ body {
   }
 }
 
-.Footer .logo{
+.footer .logo{
  width: fit-content;
   @media (max-width: 750px) {
     margin: 5px auto;
   }
 }
 
-.Footer .logo .Logo-circle {
+.footer .logo .Logo-circle {
   background-color: #ffff;
 }
 
-.Footer .logo .Logo-circle span {
+.footer .logo .Logo-circle span {
   color: #64b9f3;
 }
 
-.Footer .logo h3 {
+.footer .logo h3 {
   color: #fff;
   font-size: 1.2rem;
 }
 
-.Footer p {
+.footer p {
   font-size: 1rem;
   color: #ffff;
   margin: 20px;
